@@ -17,10 +17,11 @@ namespace Estudos
             //EntidadesExcluirDados.ExcluirDados();
 
             //Exibindo Dados das Tabelas
-            EntidadesExibir.ExibirDados();
+            //EntidadesExibir.ExibirDados();
 
             /*//EntidadesCombinandoOperacoes.CombinandoOperacoes();
 
+            Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("Dados Alterados!");
             Console.WriteLine("");
@@ -30,9 +31,6 @@ namespace Estudos
             Console.WriteLine("");
             Console.WriteLine("Precione 'Enter' para Finalizar.");
             Console.ReadLine();
-
-            //Teste de envio de versão do git
-
         }
     }
 }
