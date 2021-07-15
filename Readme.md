@@ -1,0 +1,3 @@
+Estudos em Geral de C#, utilizando o EntityFramework Core 
+
+Usos Básicos, Conceitos, CRUD, etc... 
