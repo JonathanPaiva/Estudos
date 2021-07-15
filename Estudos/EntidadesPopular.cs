@@ -23,10 +23,10 @@ namespace Estudos
                 Console.WriteLine("Adicionando Produtos...");
                 var produtos = new List<Entidades.Produto>
                 {
-                    new Entidades.Produto {NomeItem = "Cream Cracker",PrecoItem=2.00,IDCategoria=0},
-                    new Entidades.Produto {NomeItem = "Barra Chocolate", PrecoItem = 4.00, IDCategoria = 0},
-                    new Entidades.Produto {NomeItem = "Nescau em Pó", PrecoItem = 8.00, IDCategoria = 0},
-                    new Entidades.Produto {NomeItem = "Leite em Pó Itambé", PrecoItem = 5.00, IDCategoria = 0 }
+                    new Entidades.Produto {NomeItem = "Cream Cracker",PrecoItem=2.00},
+                    new Entidades.Produto {NomeItem = "Barra Chocolate", PrecoItem = 4.00},
+                    new Entidades.Produto {NomeItem = "Nescau em Pó", PrecoItem = 8.00},
+                    new Entidades.Produto {NomeItem = "Leite em Pó Itambé", PrecoItem = 5.00}
                 };
                 context.AddRange(produtos);
                 context.SaveChanges();

@@ -27,7 +27,6 @@ namespace Estudos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NomeItem = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PrecoItem = table.Column<double>(type: "float", nullable: false),
-                    IDCategoria = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

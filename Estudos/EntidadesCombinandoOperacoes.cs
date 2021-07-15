@@ -20,7 +20,6 @@ namespace Estudos
                 {
                     NomeItem = "Produto Novo",
                     PrecoItem = 11.11,
-                    IDCategoria = 0
                 };
                 db.Produtos.Add(produtoNovo);
                 Console.WriteLine("");

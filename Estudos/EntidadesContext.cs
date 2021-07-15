@@ -5,6 +5,9 @@ namespace Estudos
     public class EntidadesContext : DbContext
     {
         public DbSet<Entidades.Produto> Produtos { get; set; }
+        /* Caso haja declaração da entidade referente a um relacionamento, 
+         * não precisaria criar o DbSet referente a esta entidade
+         */
         public DbSet<Entidades.Categoria> Categorias { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

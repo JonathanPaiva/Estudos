@@ -20,8 +20,7 @@ namespace Estudos
             //EntidadesExibir.ExibirDados();
 
             /*//EntidadesCombinandoOperacoes.CombinandoOperacoes();
-
-            Console.WriteLine("");
+             * 
             Console.WriteLine("");
             Console.WriteLine("Dados Alterados!");
             Console.WriteLine("");
