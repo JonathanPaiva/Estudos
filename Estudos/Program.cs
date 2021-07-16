@@ -17,7 +17,7 @@ namespace Estudos
             //EntidadesExcluirDados.ExcluirDados();
 
             //Exibindo Dados das Tabelas
-            //EntidadesExibir.ExibirDados();
+            EntidadesExibir.ExibirDados();
 
             /*//EntidadesCombinandoOperacoes.CombinandoOperacoes();
              * 

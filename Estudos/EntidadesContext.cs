@@ -4,11 +4,13 @@ namespace Estudos
 {
     public class EntidadesContext : DbContext
     {
-        public DbSet<Entidades.Produto> Produtos { get; set; }
-        /* Caso haja declaração da entidade referente a um relacionamento, 
-         * não precisaria criar o DbSet referente a esta entidade
-         */
+        public DbSet<Entidades.Produto> Produtos { get; set; } /* Caso haja declaração da entidade referente a um relacionamento, 
+         * não precisaria criar o DbSet referente a esta entidade */
         public DbSet<Entidades.Categoria> Categorias { get; set; }
+
+        public DbSet<Entidades.Aluno> Alunos { get; set; }
+
+        public DbSet<Entidades.Equipamento> Equipamentos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
