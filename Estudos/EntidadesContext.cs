@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using static Estudos.Entidades;
 
 namespace Estudos
 {
@@ -14,14 +15,20 @@ namespace Estudos
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
             optionsBuilder.UseSqlServer("Data Source = localhost\\sqlexpress; Initial Catalog = " +
                                         "EstudosDB;Persist Security Info=True;User ID=sa;Password=qaz@123");
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            //Configurações sobre Fluent API
+            modelBuilder.Entity<Produto>()
+                .Property(t => t.NomeItem)
+                .IsRequired()
+                .HasMaxLength(250);                
+            // Configurações Fluent API sobrecrevem o DataAnnotations
+            //------------------------
 
             /*//Inclusão de Produtos
             modelBuilder.Entity<Entidades.Produto>().HasData(new Entidades.Produto
